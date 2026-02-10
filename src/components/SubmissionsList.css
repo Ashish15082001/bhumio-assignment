@@ -1,0 +1,124 @@
+.submissions-list {
+  width: 100%;
+  max-width: 600px;
+}
+
+.submissions-list.empty {
+  text-align: center;
+  padding: 2rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 2px dashed #d1d5db;
+}
+
+.empty-message {
+  color: #6b7280;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.list-title {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.submissions-table-wrapper {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.submissions-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.submissions-table thead {
+  background-color: #f3f4f6;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.submissions-table th {
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.submissions-table tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.2s;
+}
+
+.submissions-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.submissions-table td {
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.email-cell {
+  font-weight: 500;
+  color: #1f2937;
+  word-break: break-all;
+}
+
+.amount-cell {
+  font-weight: 600;
+  color: #22c55e;
+  text-align: right;
+  min-width: 80px;
+}
+
+.retries-cell {
+  text-align: center;
+  min-width: 60px;
+}
+
+.retry-badge {
+  display: inline-block;
+  background-color: #fef3c7;
+  color: #92400e;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid #fcd34d;
+}
+
+.no-retry {
+  color: #d1d5db;
+}
+
+.time-cell {
+  color: #6b7280;
+  font-size: 0.85rem;
+  min-width: 100px;
+}
+
+/* Responsive design */
+@media (max-width: 640px) {
+  .submissions-table {
+    font-size: 0.8rem;
+  }
+
+  .submissions-table th,
+  .submissions-table td {
+    padding: 0.5rem;
+  }
+
+  .email-cell {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
